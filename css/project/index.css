@@ -1,3 +1,29 @@
+header {
+  color: red;
+}
 
+.link-head {
+  font-size: 10px;
+}
+.link-head .img-logo {
+  font-size: 20px;
+}
+
+.logo-head {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid orangered;
+}
+.logo-head .title {
+  color: black;
+}
+.logo-head .img-logo {
+  width: 50px;
+  height: 40px;
+  border-right-style: dashed;
+}
+.logo-head .search-icon {
+  font-size: 40px;
+}
 
 /*# sourceMappingURL=index.css.map */
