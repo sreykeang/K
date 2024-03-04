@@ -3,10 +3,16 @@ header {
 }
 
 .link-head {
+  text-align: right;
+  margin: 20px;
   font-size: 10px;
 }
+.link-head a {
+  margin-right: 15px;
+}
 .link-head .img-logo {
-  font-size: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .logo-head {
