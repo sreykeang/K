@@ -1,3 +1,62 @@
+header {
+  color: red;
+}
 
+.link-head {
+  text-align: right;
+  font-size: 12px;
+}
+.link-head .text-logo {
+  color: black;
+}
+.link-head .text {
+  color: skyblue;
+}
+.link-head a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+.link-head .img-logo {
+  width: 15px;
+  height: 15px;
+}
+
+.logo-head {
+  font-size: small;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 3px solid orangered;
+}
+.logo-head .img-logo-head {
+  width: 120px;
+  height: 68px;
+}
+.logo-head a {
+  text-decoration: none;
+}
+.logo-head .title {
+  color: black;
+}
+.logo-head .img-logo {
+  width: 60px;
+  height: 30px;
+}
+.logo-head .logo-link {
+  padding-right: 10px;
+  text-align: center;
+  border-right-style: dotted;
+  border-right-width: 1px;
+  border-color: orangered;
+}
+.logo-head .logo-link-first {
+  border-left-style: dotted;
+  border-left-width: 1px;
+  border-color: orangered;
+}
+.logo-head .search-icon {
+  width: 20px;
+  height: 20px;
+}
 
 /*# sourceMappingURL=index.css.map */
