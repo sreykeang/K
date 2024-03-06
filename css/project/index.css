@@ -4,11 +4,17 @@ header {
 
 .link-head {
   text-align: right;
-  margin: 20px;
-  font-size: 10px;
+  font-size: 12px;
+}
+.link-head .text-logo {
+  color: black;
+}
+.link-head .text {
+  color: skyblue;
 }
 .link-head a {
   margin-right: 15px;
+  text-decoration: none;
 }
 .link-head .img-logo {
   width: 15px;
@@ -16,20 +22,41 @@ header {
 }
 
 .logo-head {
+  font-size: small;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border-bottom: 3px solid orangered;
+}
+.logo-head .img-logo-head {
+  width: 120px;
+  height: 68px;
+}
+.logo-head a {
+  text-decoration: none;
 }
 .logo-head .title {
   color: black;
 }
 .logo-head .img-logo {
-  width: 50px;
-  height: 40px;
-  border-right-style: dashed;
+  width: 60px;
+  height: 30px;
+}
+.logo-head .logo-link {
+  padding-right: 10px;
+  text-align: center;
+  border-right-style: dotted;
+  border-right-width: 1px;
+  border-color: orangered;
+}
+.logo-head .logo-link-first {
+  border-left-style: dotted;
+  border-left-width: 1px;
+  border-color: orangered;
 }
 .logo-head .search-icon {
-  font-size: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
