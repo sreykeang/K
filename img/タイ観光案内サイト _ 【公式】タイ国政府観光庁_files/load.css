@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* ----------------------------------------------------
+	loading
+---------------------------------------------------- */
+#wrapper {
+    animation: fadeIn 3s ease 0s 1 normal;
+    -webkit-animation: fadeIn 3s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.loader-wrap {  position: fixed; top: 0; left: 0; display: flex; justify-content: center; align-items: center; flex-flow: column wrap; width: 100%; height: 100%; background: #FFF; z-index: 999999;}
+
+.loader { font-size: 10px; margin: 50px auto; text-indent: -9999em; width: 7em; height: 7em; border-radius: 50%; 
+	background: #e71784;
+  background: -moz-linear-gradient(left, #e71784 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #e71784 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #e71784 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #e71784 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #e71784 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative; -webkit-animation: load3 1.4s infinite linear; animation: load3 1.4s infinite linear; -webkit-transform: translateZ(0); -ms-transform: translateZ(0); transform: translateZ(0);}
+.loader:before { width: 50%; height: 50%; background: #e71784; border-radius: 100% 0 0 0; position: absolute; top: 0; left: 0; content: '';}
+.loader:after { background: #FFF; width: 75%; height: 75%; border-radius: 50%; content: ''; margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0;}
+@-webkit-keyframes load3 {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);  }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }}
+@keyframes load3 {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}}
+
+.load { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);	z-index: 9999; 
+	animation-name:fadeInAnime; animation-duration:2s; animation-fill-mode:forwards; opacity:0;}
+.loader-logo { margin: 20px auto 0; }
+.loader-logo img { width: 120px; height: 68px;}
+.loader { }
+
+@keyframes fadeInAnime { from { opacity: 0; } to { opacity: 1; } }
+
+/* ----------------------------------------------------
+	SP
+---------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+	.loader-wrap { width: 100%; height: 100%;}	
+}

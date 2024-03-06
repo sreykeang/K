@@ -1,8 +1,6 @@
 
 
-header {
-    color: red;
-}
+
 .link-head {
     .text-logo {
         color: black;
@@ -22,7 +20,6 @@ header {
     font-size: 12px;
 }
 .logo-head {
-
     .img-logo-head {
         width: 120px;
         height: 68px; 
@@ -56,7 +53,12 @@ header {
     }
     .search-icon {
         width: 20px;
-        height: 20px;
-        
+        height: 20px;  
     }
 }
+.text {
+   padding: 14px;
+    text-align: center;
+    column-count: 5;
+}
+

@@ -1,0 +1,26 @@
+function gaEventWithCallBack(bannerLink, eventCategory, eventAction, eventLabel, isTargetBlank) {
+	if (typeof ga == 'function') {
+		var w = '';
+		if (isTargetBlank) {
+			w = window.open('', '_blank');
+		};
+		ga(
+			'send',
+			'event',
+			eventCategory,
+			eventAction,
+			eventLabel,
+			{
+				hitCallback: function(){
+					if (isTargetBlank) {
+						w.location.href = bannerLink;
+					} else {
+						location.href = bannerLink;
+					}
+				}
+			}
+		);
+	} else {
+		location.href=bannerLink;
+	}
+}
