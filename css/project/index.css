@@ -1,64 +1,117 @@
-.link-head {
-  text-align: right;
+header {
+  border-bottom: 3px solid orangered;
+}
+header .container {
+  margin: 0 auto;
+  width: 80%;
+}
+header .link-head {
+  margin: 8px 0;
   font-size: 12px;
+  text-align: right;
 }
-.link-head .text-logo {
-  color: black;
+header .link-head .text-logo {
+  color: #666;
 }
-.link-head .text {
-  color: skyblue;
+header .link-head .text {
+  color: #005bac;
 }
-.link-head a {
+header .link-head a {
   margin-right: 15px;
   text-decoration: none;
 }
-.link-head .img-logo {
+header .link-head .img-logo {
   width: 15px;
   height: 15px;
 }
-
-.logo-head {
-  font-size: small;
+header .link-head .material-symbols-outlined {
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 700;
+}
+header .logo-head {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid orangered;
+  font-size: small;
+  height: 78px;
 }
-.logo-head .img-logo-head {
+header .logo-head .img-logo-head {
+  margin-top: -10px;
   width: 120px;
-  height: 68px;
+  height: 60px;
 }
-.logo-head a {
+header .logo-head .header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: calc(90% - 120px);
+}
+header .logo-head .header-menu .logo-link-first {
+  border-left-style: dotted;
+  border-left-width: 1px;
+  border-color: gray;
+}
+header .logo-head .header-menu a {
   text-decoration: none;
 }
-.logo-head .title {
-  color: black;
+header .logo-head .header-menu a:hover {
+  transition: all 0.3s;
+  transform: translate(0, -5px);
 }
-.logo-head .img-logo {
-  width: 60px;
-  height: 30px;
-}
-.logo-head .logo-link {
-  padding-right: 10px;
+header .logo-head .header-menu .logo-link {
+  padding: 10px 0;
+  width: 100%;
   text-align: center;
   border-right-style: dotted;
   border-right-width: 1px;
-  border-color: orangered;
+  border-color: gray;
 }
-.logo-head .logo-link-first {
-  border-left-style: dotted;
-  border-left-width: 1px;
-  border-color: orangered;
+header .logo-head .header-menu .img-logo {
+  width: 60px;
+  height: 30px;
 }
-.logo-head .search-icon {
+header .logo-head .header-menu .title {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  transform: translate(0, 5px);
+}
+header .logo-head .header-menu .title:hover {
+  transition: all 0.5s;
+}
+header .logo-head .header-menu .search-icon {
+  margin-left: 20px;
   width: 20px;
   height: 20px;
 }
 
-.text {
-  padding: 14px;
-  text-align: center;
-  column-count: 5;
+footer {
+  background-color: #444444;
+  color: white;
+  font-size: x-small;
+  justify-content: right;
+}
+footer .text {
+  padding: 20px;
+  margin: 20px;
+  line-height: 20px;
+}
+footer .text-list {
+  padding: 20px;
+  margin: 20px;
+  line-height: 20px;
+}
+footer .footer-link {
+  display: flex;
+}
+footer .icon-link {
+  display: flex;
+}
+footer .icon-link img {
+  width: 20px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -91,9 +91,30 @@ header {
     }
 }
 
-.text {
-   padding: 14px;
-    text-align: center;
-    column-count: 5;
-}
 
+footer {
+    background-color:#444444;
+    color: white;
+    font-size: x-small;
+    justify-content: right;
+    .text {
+        padding: 20px;
+        margin: 20px; 
+        line-height: 20px;   
+    }
+    .text-list {
+        padding: 20px;
+        margin: 20px; 
+        line-height: 20px;
+    }
+    .footer-link {
+        display: flex;
+    }
+    .icon-link {
+        display: flex;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
