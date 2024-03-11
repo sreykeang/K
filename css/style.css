@@ -1,3 +1,8 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
 header {
   border-bottom: 3px solid orangered;
 }
@@ -87,6 +92,118 @@ header .logo-head .header-menu .search-icon {
   height: 20px;
 }
 
+.article .title-banner {
+  position: relative;
+  height: 360px;
+}
+.article .title-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.article .title-banner .title-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bolder;
+  font-size: 36px;
+}
+.article .article-text {
+  margin: 0 auto;
+  width: 70%;
+}
+.article .article-text .news {
+  margin: 10px 0;
+}
+.article .article-text .news a {
+  margin: 10px 0;
+  color: black;
+  text-decoration: none;
+}
+.article .article-text .news a:hover {
+  color: #e71784;
+}
+.article .article-text .news .news-date {
+  color: #b19553;
+}
+.article .article-text .article-title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.article .article-text .article-title h1 {
+  padding-top: 10px;
+  border-top: 5px solid;
+  border-image: linear-gradient(to right, #e71784, #fdc300) 1;
+}
+.article .article-text .article-title p {
+  color: gray;
+}
+.article .article-text .article-text {
+  margin-top: 10px;
+  margin-left: auto;
+  padding-top: 20px;
+  width: calc(100% - 60px);
+}
+.article .article-text .article-text h2 {
+  margin: 50px 0 20px 0;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: bolder;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to right, #e71784, #fdc300) 1;
+}
+.article .article-text .article-text .image {
+  margin: 0 auto 20px;
+  width: fit-content;
+}
+.article .article-text .article-text .image img {
+  margin: 0 auto;
+  object-fit: cover;
+}
+.article .article-text .article-text .article-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+  list-style: none;
+  border: 1px solid rgb(201, 201, 201);
+}
+.article .article-text .article-text .article-links .material-symbols-outlined {
+  color: #e71784;
+  vertical-align: bottom;
+}
+.article .article-text .article-text .article-links a:hover {
+  color: #e71784;
+}
+.article .article-text .article-text .button {
+  position: relative;
+  margin: 20px auto 30px;
+  padding: 10px 0;
+  width: 30%;
+  border: 1px solid #e71784;
+  border-radius: 50px;
+  color: #e71784;
+  text-align: center;
+  transition: all 0.3s;
+}
+.article .article-text .article-text .button:hover {
+  background-color: #e71784;
+  color: white;
+}
+.article .article-text .article-text .button:hover .material-symbols-outlined {
+  transform: translate(5px, -50%);
+}
+.article .article-text .article-text .button .material-symbols-outlined {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  font-weight: bold;
+  transition: all 0.1s;
+}
+
 footer {
   background-color: #444444;
   color: white;
@@ -112,122 +229,6 @@ footer .icon-link {
 footer .icon-link img {
   width: 20px;
   height: 20px;
-}
-
-.about .title-banner {
-  position: relative;
-  height: 360px;
-}
-.about .title-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.about .title-banner .title-banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-weight: bolder;
-  font-size: 36px;
-}
-.about .article {
-  margin: 0 auto;
-  width: 70%;
-}
-.about .article .news {
-  margin: 10px 0;
-}
-.about .article .news a {
-  margin: 10px 0;
-  color: black;
-  text-decoration: none;
-}
-.about .article .news a:hover {
-  color: #e71784;
-}
-.about .article .news .news-date {
-  color: #b19553;
-}
-.about .article .article-title {
-  padding-bottom: 10px;
-  border-bottom: 1px solid gray;
-}
-.about .article .article-title h1 {
-  padding-top: 10px;
-  border-top: 5px solid;
-  border-image: linear-gradient(to right, #e71784, #fdc300) 1;
-}
-.about .article .article-title p {
-  color: gray;
-}
-.about .article .article-text {
-  margin-top: 10px;
-  margin-left: auto;
-  padding-top: 20px;
-  width: calc(100% - 60px);
-}
-.about .article .article-text h2 {
-  margin: 50px 0 20px 0;
-  padding-bottom: 10px;
-  font-size: 30px;
-  font-weight: bolder;
-  border-bottom: 5px solid;
-  border-image: linear-gradient(to right, #e71784, #fdc300) 1;
-}
-.about .article .article-text .image {
-  margin: 0 auto 20px;
-  width: fit-content;
-}
-.about .article .article-text .image img {
-  margin: 0 auto;
-  object-fit: cover;
-}
-.about .article .article-text .article-links {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  padding: 20px;
-  list-style: none;
-  border: 1px solid rgb(201, 201, 201);
-}
-.about .article .article-text .article-links .material-symbols-outlined {
-  color: #e71784;
-  vertical-align: bottom;
-}
-.about .article .article-text .article-links a:hover {
-  color: #e71784;
-}
-.about .article .article-text .button {
-  position: relative;
-  margin: 20px auto 30px;
-  padding: 10px 0;
-  width: 30%;
-  border: 1px solid #e71784;
-  border-radius: 50px;
-  color: #e71784;
-  text-align: center;
-  transition: all 0.3s;
-}
-.about .article .article-text .button:hover {
-  background-color: #e71784;
-  color: white;
-}
-.about .article .article-text .button:hover .material-symbols-outlined {
-  transform: translate(5px, -50%);
-}
-.about .article .article-text .button .material-symbols-outlined {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translate(0, -50%);
-  font-weight: bold;
-  transition: all 0.1s;
-}
-
-h1 {
-  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

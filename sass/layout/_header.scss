@@ -1,0 +1,92 @@
+header {
+  border-bottom: 3px solid orangered;
+  .container {
+      margin: 0 auto;
+      width: 80%;
+  }
+  .link-head {
+      margin: 8px 0;
+      font-size: 12px;
+      .text-logo {
+          color: #666;
+      }
+      .text {
+          color:#005bac;
+      }
+      a {
+          margin-right: 15px;
+          text-decoration: none;
+      }
+          text-align: right;
+      .img-logo {
+          width: 15px;
+          height: 15px;
+      }
+      .material-symbols-outlined {
+          vertical-align: top;
+          font-size: 16px;
+          font-weight: 700;
+      }
+  }
+
+  .logo-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: small;
+      height: 78px;
+
+      .img-logo-head {
+          margin-top: -10px;
+          width: 120px;
+          height: 60px; 
+      }
+      .header-menu {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+          width: calc(90% - 120px);
+          .logo-link-first {
+              border-left-style:dotted;
+              border-left-width: 1px;
+              border-color: gray;
+          }
+          a {
+              text-decoration: none;
+              &:hover {
+                  transition: all .3s;
+                  transform: translate(0, -5px);
+              }
+          }
+          .logo-link {
+              padding: 10px 0;
+              width: calc(100%);
+              text-align: center;
+              border-right-style:dotted;
+              border-right-width: 1px;
+              border-color: gray;
+          }
+          .img-logo {
+              width: 60px;
+              height: 30px;
+              
+          }
+          .title {
+              color: black;
+              font-size: 14px;
+              font-weight: bold;
+              transform: translate(0, 5px);
+              &:hover {
+                  transition: all 0.5s;
+                  
+              }
+          }
+          .search-icon {
+              margin-left: 20px;
+              width: 20px;
+              height: 20px;
+          }
+      }
+  }
+}

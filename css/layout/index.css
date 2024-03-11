@@ -1,3 +1,90 @@
-
+header {
+  border-bottom: 3px solid orangered;
+}
+header .container {
+  margin: 0 auto;
+  width: 80%;
+}
+header .link-head {
+  margin: 8px 0;
+  font-size: 12px;
+  text-align: right;
+}
+header .link-head .text-logo {
+  color: #666;
+}
+header .link-head .text {
+  color: #005bac;
+}
+header .link-head a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+header .link-head .img-logo {
+  width: 15px;
+  height: 15px;
+}
+header .link-head .material-symbols-outlined {
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 700;
+}
+header .logo-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+  height: 78px;
+}
+header .logo-head .img-logo-head {
+  margin-top: -10px;
+  width: 120px;
+  height: 60px;
+}
+header .logo-head .header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: calc(90% - 120px);
+}
+header .logo-head .header-menu .logo-link-first {
+  border-left-style: dotted;
+  border-left-width: 1px;
+  border-color: gray;
+}
+header .logo-head .header-menu a {
+  text-decoration: none;
+}
+header .logo-head .header-menu a:hover {
+  transition: all 0.3s;
+  transform: translate(0, -5px);
+}
+header .logo-head .header-menu .logo-link {
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  border-right-style: dotted;
+  border-right-width: 1px;
+  border-color: gray;
+}
+header .logo-head .header-menu .img-logo {
+  width: 60px;
+  height: 30px;
+}
+header .logo-head .header-menu .title {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  transform: translate(0, 5px);
+}
+header .logo-head .header-menu .title:hover {
+  transition: all 0.5s;
+}
+header .logo-head .header-menu .search-icon {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
 
 /*# sourceMappingURL=index.css.map */
