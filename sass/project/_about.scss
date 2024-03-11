@@ -1,0 +1,126 @@
+.about {
+  .title-banner {
+    position: relative;
+    height: 360px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .title-banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bolder;
+      font-size: 36px;
+    }
+  }
+
+  .article {
+    margin: 0 auto;
+    width: 70%;
+    .news {
+      margin: 10px 0;
+      a {
+        margin: 10px 0;
+        color: black;
+        text-decoration: none;
+        &:hover {
+          color: #e71784;
+        }
+      }
+      .news-date {
+        color: #b19553;
+      }
+    }
+    .article-title {
+      padding-bottom: 10px;
+      border-bottom: 1px solid gray;
+      h1 {
+        padding-top: 10px;
+        border-top: 5px solid;
+        border-image: linear-gradient(
+          to right,
+          #e71784,
+          #fdc300
+        ) 1;
+      }
+      p { 
+        color: gray;
+      }
+    }
+
+    .article-text {
+      margin-top: 10px;
+      margin-left: auto;
+      padding-top: 20px;
+      width: calc(100% - 60px);
+
+      h2 {
+        margin: 50px 0 20px 0;
+        padding-bottom: 10px;
+        font-size: 30px;
+        font-weight: bolder;
+        border-bottom: 5px solid;
+        border-image: linear-gradient(
+          to right,
+          #e71784,
+          #fdc300
+        ) 1;
+      }
+      .image {
+        margin: 0 auto 20px;
+        width: fit-content;
+        img {
+          margin: 0 auto;
+          object-fit: cover;
+        }
+      }
+      .article-links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 20px;
+        list-style: none;
+        border: 1px solid rgb(201, 201, 201);
+        .material-symbols-outlined {
+          color: #e71784;
+          vertical-align: bottom;
+        }
+        a {
+          &:hover {
+            color: #e71784;
+          }
+        }
+      }
+      .button {
+        position: relative;
+        margin: 20px auto 30px;
+        padding: 10px 0;
+        width: 30%;
+        border: 1px solid #e71784;
+        border-radius: 50px;
+        color: #e71784;
+        text-align: center;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #e71784;
+          color: white;
+        }
+        &:hover .material-symbols-outlined {
+          transform: translate(5px, -50%);
+        }
+        .material-symbols-outlined {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translate(0, -50%);
+          font-weight: bold;
+          transition: all 0.1s;
+        }
+      }
+    }
+  }
+}
