@@ -9,8 +9,11 @@ footer {
         margin: 20px; 
         line-height: 20px;
         .size {
-            font-size: 18px;
-            border-bottom: solid 1px #666
+            font-size: 15px;
+            font-weight: bold;
+            border-bottom: solid 1px #666;
+            margin-bottom: 7.5px;
+            padding-bottom: 7.5px;
         }
     }
     .text-list {
@@ -26,7 +29,7 @@ footer {
                 vertical-align: middle;
                 &::before {
                     content:  "";     /* 空の要素作成 */
-                    margin-right: 2.5px;
+                    margin-right: 4px;
                     width:  5px;               /* 幅指定 */
                     height:  1px;              /* 高さ指定 */
                     display:  inline-block;     /* インラインブロックにする */
