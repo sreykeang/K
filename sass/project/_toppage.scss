@@ -3,10 +3,15 @@ footer {
     color: white;
     font-size: x-small;
     justify-content: right;
+    text-decoration: none;
     .text {
         padding: 20px;
         margin: 20px; 
-        line-height: 20px;   
+        line-height: 20px;
+        .size {
+            font-size: 18px;
+            border-bottom: solid 1px #666
+        }
     }
     .text-list {
         padding: 20px;
@@ -15,6 +20,21 @@ footer {
     }
     .footer-link {
         display: flex;
+        .text {
+            li {
+                list-style: none;
+                vertical-align: middle;
+                &::before {
+                    content:  "";     /* 空の要素作成 */
+                    margin-right: 2.5px;
+                    width:  5px;               /* 幅指定 */
+                    height:  1px;              /* 高さ指定 */
+                    display:  inline-block;     /* インラインブロックにする */
+                    background-color: white;  /* 背景色指定 */
+                    vertical-align: center;
+                } 
+            }
+        }
     }
     .icon-link {
         display: flex;

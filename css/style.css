@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   color: black;
   text-decoration: none;
@@ -209,11 +210,16 @@ footer {
   color: white;
   font-size: x-small;
   justify-content: right;
+  text-decoration: none;
 }
 footer .text {
   padding: 20px;
   margin: 20px;
   line-height: 20px;
+}
+footer .text .size {
+  font-size: 18px;
+  border-bottom: solid 1px #666;
 }
 footer .text-list {
   padding: 20px;
@@ -222,6 +228,19 @@ footer .text-list {
 }
 footer .footer-link {
   display: flex;
+}
+footer .footer-link .text li {
+  list-style: none;
+  vertical-align: middle;
+}
+footer .footer-link .text li::before {
+  content: ""; /* 空の要素作成 */
+  margin-right: 2.5px;
+  width: 5px; /* 幅指定 */
+  height: 1px; /* 高さ指定 */
+  display: inline-block; /* インラインブロックにする */
+  background-color: white; /* 背景色指定 */
+  vertical-align: center;
 }
 footer .icon-link {
   display: flex;
