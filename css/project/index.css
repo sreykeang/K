@@ -39,12 +39,36 @@ footer .footer-link .text li::before {
   background-color: white; /* 背景色指定 */
   vertical-align: center;
 }
-footer .icon-link {
+footer .footer-company-text {
+  text-align: center;
+}
+footer .footer-company-text .text {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer-companies {
   display: flex;
 }
-footer .icon-link img {
-  width: 20px;
-  height: 20px;
+
+.footer-company .text {
+  list-style: none;
+}
+.footer-company .text .small-size {
+  font-weight: bold;
+  font-size: small;
+}
+.footer-company .text .size {
+  font-weight: bold;
+  font-size: large;
+}
+.footer-company .icon-link {
+  display: flex;
+}
+.footer-company .icon-link img {
+  width: 15px;
+  height: 15px;
 }
 
 /*# sourceMappingURL=index.css.map */
