@@ -23,20 +23,45 @@ footer {
   }
   .footer-link {
     display: flex;
-    .text {
-      li {
-        list-style: none;
-        vertical-align: middle;
-        &::before {
-          content:  "";     /* 空の要素作成 */
-          margin-right: 4px;
-          width:  5px;               /* 幅指定 */
-          height:  1px;              /* 高さ指定 */
-          display:  inline-block;     /* インラインブロックにする */
-          background-color: white;  /* 背景色指定 */
-          vertical-align: center;
-        } 
+    justify-content: center;
+  }
+    .text-link {
+      list-style: none; 
+      font-size: small;
+      margin-right: 25px;
+      a {
+      color:white;
       }
+    }
+    .bar {
+      &::before {
+        content:  "";     /* 空の要素作成 */
+        margin-right: 15px;
+        width:  1px;               /* 幅指定 */
+        height:  10px;              /* 高さ指定 */
+        display:  inline-block;     /* インラインブロックにする */
+        background-color: white;  /* 背景色指定 */
+        vertical-align: center;
+        
+      } 
+    }
+    .copy-right {
+      text-align: center;
+      padding: 20px;
+    }
+    .text {
+    li {
+      list-style: none;
+      vertical-align: middle;
+      &::before {
+        content:  "";     /* 空の要素作成 */
+        margin-right: 4px;
+        width:  5px;               /* 幅指定 */
+        height:  1px;              /* 高さ指定 */
+        display:  inline-block;     /* インラインブロックにする */
+        background-color: white;  /* 背景色指定 */
+        vertical-align: center;
+      } 
     }
   }
   .footer-company-text {
@@ -70,7 +95,7 @@ footer {
   .icon-link {
     display: flex;
   }
-  img {
+    img {
     width: 15px;
     height: 15px;
   }

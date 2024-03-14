@@ -231,12 +231,34 @@ footer .text-list {
 }
 footer .footer-link {
   display: flex;
+  justify-content: center;
 }
-footer .footer-link .text li {
+footer .text-link {
+  list-style: none;
+  font-size: small;
+  margin-right: 25px;
+}
+footer .text-link a {
+  color: white;
+}
+footer .bar::before {
+  content: ""; /* 空の要素作成 */
+  margin-right: 15px;
+  width: 1px; /* 幅指定 */
+  height: 10px; /* 高さ指定 */
+  display: inline-block; /* インラインブロックにする */
+  background-color: white; /* 背景色指定 */
+  vertical-align: center;
+}
+footer .copy-right {
+  text-align: center;
+  padding: 20px;
+}
+footer .text li {
   list-style: none;
   vertical-align: middle;
 }
-footer .footer-link .text li::before {
+footer .text li::before {
   content: ""; /* 空の要素作成 */
   margin-right: 4px;
   width: 5px; /* 幅指定 */
