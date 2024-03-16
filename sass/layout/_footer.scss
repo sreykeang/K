@@ -1,0 +1,120 @@
+footer {
+  background-color: #444444;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+
+  .footer-banner {
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 80%;
+    li {
+      list-style: none;
+      vertical-align: middle;
+      &::before {
+        content: "";
+        margin-right: 4px;
+        width: 5px;
+        height: 1px;
+        display: inline-block;
+        background-color: white;
+        vertical-align: center;
+      }
+      .footer-company-text {
+        text-align: center;
+        .text {
+          color: white;
+          font-weight: bold;
+          font-size: large;
+        }
+      }
+    }
+  }
+
+  .text {
+    padding: 20px;
+    margin: 20px;
+    .size {
+      font-size: 15px;
+      font-weight: bold;
+      border-bottom: solid 1px #666;
+      margin-bottom: 7.5px;
+      padding-bottom: 7.5px;
+    }
+  }
+  .text-list {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .footer-upper-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-middle-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    .list-title {
+      margin-left: -25px;
+      padding-left: 25px;
+      font-weight: bold;
+      border-bottom: solid 1px #666;
+      margin-bottom: 7.5px;
+      padding-bottom: 7.5px;
+    }
+    .list-left-content {
+      margin-right: 50px;
+    }
+  }
+
+  .footer-bottom-content {
+    .footer-link {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .text-link {
+      list-style: none;
+      font-size: small;
+      margin-right: 25px;
+      a {
+        color: white;
+      }
+    }
+    .bar {
+      &::before {
+        content: "";
+        margin-right: 15px;
+        width: 1px;
+        height: 10px;
+        display: inline-block;
+        background-color: white;
+        vertical-align: center;
+      }
+    }
+    .copy-right {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
