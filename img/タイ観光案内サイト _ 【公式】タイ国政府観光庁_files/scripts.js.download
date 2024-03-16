@@ -1,0 +1,338 @@
+// JavaScript Document
+
+/* タイ国政府観光庁 https://www.thailandtravel.or.jp/ 
+  UPDATE: 21.12.22 */
+
+
+
+
+///// COOKIE /////
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#333333"
+    },
+    "button": {
+      "background": "#e71784",
+      "text": "#ffffff"
+    }
+  },
+  "content": {
+    "message": "当ウェブサイトでは利用の向上のためcookie(クッキー)を使用しています。同意するをクリックすると当ウェブサイトでの使用に同意することになります。",
+    "dismiss": "同意する",
+    "deny": "拒否をする",
+    "link": "プライバシーポリシー",
+    "href": "/tat/privacy/"
+  }
+});
+
+
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+//no Phone
+///// DROP MENU PC /////
+$(function(){
+//global nav
+ var btn = $(".parent");
+ var submenu = $(".drp-inner");
+
+	$(".drp-close").click(function() { $(submenu).slideUp() });
+	$(".nav-bt").click(function() { $(submenu).slideUp() });
+	$(btn).click(function(ev){
+		var sub = $(this).children(submenu);
+		if ($(sub).is(':hidden')) {
+			ev.stopPropagation();
+			$(submenu).hide();
+			$(sub).slideDown();    
+		}
+	});
+});
+
+
+//scroll
+$(window).scroll( function() {
+	var windowHeight = $('html, body').height();
+		if ($(this).scrollTop() > windowHeight/2) {
+			$('.drp-inner').slideUp(); 
+			}
+	});
+
+$('.drp-inner').on('click', function(event){ event.stopPropagation();});
+	
+///// MINIMUM NAVI /////
+$(function () {
+  if ($('.nav-pc')[0]) {
+    var nav = $('.nav-pc');
+    var navTop = nav.offset().top + 300;
+    var navHeight = nav.height() + 10;
+    var showFlag = false;
+    nav.css('top', -navHeight + 'px');
+    $(window).scroll(function () {
+      var winTop = $(this).scrollTop();
+      if (winTop >= navTop) {
+        if (showFlag == false) {
+          showFlag = true;
+          nav
+            .addClass('fixed')
+            .stop().animate({
+              'top': '0px'
+            }, 200);
+        }
+      } else if (winTop <= navTop) {
+        if (showFlag) {
+          showFlag = false;
+          nav.stop().animate({
+            'top': -navHeight + 'px'
+          }, 200, function () {
+            nav.removeClass('fixed');
+          });
+        }
+      }
+    });
+  }
+});
+$(function(){
+	$(".drp-close").click(function() { $(".drp-inner").slideUp() });
+	$(".map-g").click(function() { $(".drp-inner").slideUp() });
+});
+
+}//no Phone
+
+
+if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+//phone only
+///// NAVI SP /////
+$(function(){
+	
+	$('.menu').on('click', function() {
+		$(this).toggleClass('active');
+		$("#g-nav").toggleClass('active');
+		$('.drp-inner').hide();
+		$('.nav-txt').removeClass('open');
+	})
+	$('.nav-bt').on('click', function() {
+		$(this).next().slideToggle('fast');
+		$(this).toggleClass('active');
+	});
+	$('.nav-txt').on('click', function() {
+		$(this).toggleClass('open');
+	});
+	$('.drop-inner').hide( function() {
+		$('.nav-txt').removeClass('open');
+	});
+	$('.drop-inner').on('click', function(event){
+    event.stopPropagation();
+	});
+});
+
+	
+$(function(){
+    $('.nav-search-sp').on('click', function() {
+        $(".nav-s-inner").toggleClass('active');
+    })
+});
+$('.drop-in-search').on('click', function(event){
+    event.stopPropagation();
+});
+	
+	
+
+}//phone only
+
+
+
+///// INDEX SLIDER /////
+$('.slider').slick({
+  autoplay:true,
+  autoplaySpeed:5000,
+  dots:true,
+  arrows: true,
+  appendDots: $('.dots'),
+  prevArrow: '<img src="https://www.thailandtravel.or.jp/wp-content/themes/tat/img/arrow_w_l.svg" class="slide-arrow prev-arrow pc">',
+  nextArrow: '<img src="https://www.thailandtravel.or.jp/wp-content/themes/tat/img/arrow_w_r.svg" class="slide-arrow next-arrow pc">',
+  fade: true,
+});
+
+
+
+///// TAB /////
+//任意のタブにURLからリンクするための設定
+function GethashID (hashIDName){
+	if(hashIDName){
+		//タブ設定
+		$('.news-tab li').find('a').each(function() { 
+			var idName = $(this).attr('href'); 
+			if(idName == hashIDName){ 
+				var parentElm = $(this).parent();
+				$('.news-tab li').removeClass("active");
+				$(parentElm).addClass("active");
+				
+				$(".topics-t-ul").removeClass("is-active");
+				$(hashIDName).addClass("is-active"); 
+			}
+		});
+	}
+}
+
+$('.news-tab a').on('click', function() {
+	var idName = $(this).attr('href');
+	GethashID (idName);
+	return false;
+});
+
+$(window).on('load', function () {
+    $('.news-tab li:first-of-type').addClass("active");
+    $('.topics-t-ul:first-of-type').addClass("is-active"); 
+	var hashName = location.hash;
+	GethashID (hashName);
+});
+////
+
+///// MAP /////
+$(".imgMapBt").on("click",function(){
+	var $th = $(this).index();
+	$(".mp-t-card").removeClass("active");
+	$(".map-g").removeClass("active");
+	$(this).addClass("active");
+	$(".mp-t-card").eq($th).addClass("active");
+	$(".map-g").eq($th).addClass("active");
+});
+
+///// ANKER LINK /////
+$('.mp-t-area-cont a[href^="#"]').click(function(){ return false;});
+ 
+
+///// FEATURE /////
+$('.multiple-items').slick({
+  autoplay:true,
+  infinite: true,
+  dots: true,
+  arrows: false,
+  centerMode: true,
+	cssEase: 'linear',
+	autoplaySpeed: 2500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+   {
+    breakpoint: 768, //767px以下のサイズに適用
+    settings: {
+			autoplaySpeed: 3000,
+      slidesToShow: 1
+    }
+   }
+  ]
+});
+
+
+///// THUMBNAIK CHANGE /////
+$(function(){
+	$("img.change").click(function(){
+		var ImgSrc = $(this).attr("src");
+		var ImgAlt = $(this).attr("alt");
+		$("img#Main-Photo").attr({src:ImgSrc,alt:ImgAlt});
+		$("img#Main-Photo").hide();
+		$("img#Main-Photo").fadeIn("slow");
+		return false;
+	});
+});
+
+
+
+///// CAMPAIGN SLIDER /////
+$('.campaign-slide').slick({
+  autoplay:true,
+  infinite: true,
+  dots: false,
+  arrows: true,
+  prevArrow: '<img src="https://www.thailandtravel.or.jp/wp-content/themes/tat/img/arrow_gray_l.svg" class="slide-arrow prev-arrow pc">',
+  nextArrow: '<img src="https://www.thailandtravel.or.jp/wp-content/themes/tat/img/arrow_gray_r.svg" class="slide-arrow next-arrow pc">',
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  centerPadding: '10px',
+   responsive: [
+   {
+    breakpoint: 768, //767px以下のサイズに適用
+    settings: {
+      arrows: false,
+      autoplay:true,
+      infinite: true,
+      dots: false,
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerPadding: '50px'
+    }
+   }
+ ]
+});
+
+
+///// NEWS SLIDE /////
+$('.news-slider').slick({
+	autoplay: true,
+	infinite: true,
+	autoplaySpeed: 3500,
+	dots: false,
+	slidesToShow: 1
+});
+
+
+///// EVENT SLIDE /////
+$('.event-slider').slick({
+	autoplay: true,
+	infinite: true,
+	prevArrow: '<img src="https://www.thailandtravel.or.jp/wp-content/themes/tat/img/arrow_w_l.svg" class="slide-arrow prev-arrow">',
+	nextArrow: '<img src="https://www.thailandtravel.or.jp/wp-content/themes/tat/img/arrow_w_r.svg" class="slide-arrow next-arrow">',
+	slidesToShow: 3,
+		responsive: [
+   {
+    breakpoint: 768, //767px以下のサイズに適用
+    settings: {
+      arrows: false,
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+			prevArrow: '<img src="https://www.thailandtravel.or.jp/wp-content/themes/tat/img/arrow_w_l.svg" class="slide-arrow prev-arrow">',
+			nextArrow: '<img src="https://www.thailandtravel.or.jp/wp-content/themes/tat/img/arrow_w_r.svg" class="slide-arrow next-arrow">',
+			centerPadding: '50px'
+    }
+   }
+ ]
+});
+
+
+
+
+
+///// PAGE TOP /////
+$(function () {
+  var showFlag = false;
+  var topBtn = $('#page_top');
+  topBtn.css('bottom', '-100px');
+  $(this).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+      if (showFlag == false) {
+        showFlag = true;
+        topBtn.stop().animate({
+          'bottom': '26px'
+        }, 200);
+      }
+    } else {
+      if (showFlag) {
+        showFlag = false;
+        topBtn.stop().animate({
+          'bottom': '-70px'
+        }, 200);
+      }
+    }
+  });
+  topBtn.click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 700);
+    return false;
+  });
+});
+
+

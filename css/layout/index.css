@@ -1,3 +1,199 @@
+header {
+  border-bottom: 3px solid orangered;
+}
+header .container {
+  margin: 0 auto;
+  width: 80%;
+}
+header .link-head {
+  margin: 8px 0;
+  font-size: 12px;
+  text-align: right;
+}
+header .link-head .text-logo {
+  color: #666;
+}
+header .link-head .text {
+  color: #005bac;
+}
+header .link-head a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+header .link-head .img-logo {
+  width: 15px;
+  height: 15px;
+}
+header .link-head .material-symbols-outlined {
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 700;
+}
+header .logo-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+  height: 78px;
+}
+header .logo-head .img-logo-head {
+  margin-top: -10px;
+  width: 120px;
+  height: 60px;
+}
+header .logo-head .header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: calc(90% - 120px);
+}
+header .logo-head .header-menu .logo-link-first {
+  border-left-style: dotted;
+  border-left-width: 1px;
+  border-color: gray;
+}
+header .logo-head .header-menu a {
+  text-decoration: none;
+}
+header .logo-head .header-menu a:hover {
+  transition: all 0.3s;
+  transform: translate(0, -5px);
+}
+header .logo-head .header-menu .logo-link {
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  border-right-style: dotted;
+  border-right-width: 1px;
+  border-color: gray;
+}
+header .logo-head .header-menu .img-logo {
+  width: 60px;
+  height: 30px;
+}
+header .logo-head .header-menu .title {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  transform: translate(0, 5px);
+}
+header .logo-head .header-menu .title:hover {
+  transition: all 0.5s;
+}
+header .logo-head .header-menu .search-icon {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
 
+footer {
+  background-color: #444444;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+footer .footer-banner picture {
+  width: 100%;
+  height: 100%;
+}
+footer .footer-banner img {
+  width: 100%;
+  height: 100%;
+}
+footer .container {
+  margin: 0 auto;
+  width: 80%;
+}
+footer .container li {
+  list-style: none;
+  vertical-align: middle;
+}
+footer .container li::before {
+  content: "";
+  margin-right: 4px;
+  width: 5px;
+  height: 1px;
+  display: inline-block;
+  background-color: white;
+  vertical-align: center;
+}
+footer .container li .footer-company-text {
+  text-align: center;
+}
+footer .container li .footer-company-text .text {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+footer .text {
+  padding: 20px;
+  margin: 20px;
+}
+footer .text .size {
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: solid 1px #666;
+  margin-bottom: 7.5px;
+  padding-bottom: 7.5px;
+}
+footer .text-list {
+  padding: 20px;
+  margin: 20px;
+}
+footer .footer-upper-content {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-middle-content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+footer .footer-middle-content .list-title {
+  margin-left: -25px;
+  padding-left: 25px;
+  font-weight: bold;
+  border-bottom: solid 1px #666;
+  margin-bottom: 7.5px;
+  padding-bottom: 7.5px;
+}
+footer .footer-middle-content .list-left-content {
+  margin-right: 50px;
+}
+footer .footer-bottom-content .footer-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+footer .footer-bottom-content .text-link {
+  list-style: none;
+  font-size: small;
+  margin-right: 25px;
+}
+footer .footer-bottom-content .text-link a {
+  color: white;
+}
+footer .footer-bottom-content .bar::before {
+  content: "";
+  margin-right: 15px;
+  width: 1px;
+  height: 10px;
+  display: inline-block;
+  background-color: white;
+  vertical-align: center;
+}
+footer .footer-bottom-content .copy-right {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
 
 /*# sourceMappingURL=index.css.map */
