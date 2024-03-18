@@ -1,0 +1,37 @@
+.toppage-news {
+  .news-title {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #e71784;
+    font-weight: 700px;
+    font-size: 2.4rem;
+  }
+
+  .toppage-list {
+    width: 90%;
+    margin: 0 auto;
+
+    .news-list {
+      display: flex;
+      width: 50%;
+      padding: 10px;
+      margin: 10px;
+      font: 16px;
+      color: black;
+
+      .list {
+        width: calc(100% / 5);
+        text-align: center;
+        border-right: solid 1px #ccc;
+        border-bottom: solid 1px #ccc;
+      }
+
+    }
+    .img-list {
+      width: 70px;
+      height: 50px;
+    }
+  }
+
+}

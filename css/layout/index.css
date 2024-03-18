@@ -87,6 +87,10 @@ header .logo-head .header-menu .search-icon {
   height: 20px;
 }
 
+news-link .news-h2 {
+  display: flex;
+}
+
 footer {
   background-color: #444444;
   color: white;

@@ -1,3 +1,32 @@
-
+.toppage-news .news-title {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  color: #e71784;
+  font-weight: 700px;
+  font-size: 2.4rem;
+}
+.toppage-news .toppage-list {
+  width: 90%;
+  margin: 0 auto;
+}
+.toppage-news .toppage-list .news-list {
+  display: flex;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  font: 16px;
+  color: black;
+}
+.toppage-news .toppage-list .news-list .list {
+  width: 20%;
+  text-align: center;
+  border-right: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+.toppage-news .toppage-list .img-list {
+  width: 70px;
+  height: 50px;
+}
 
 /*# sourceMappingURL=index.css.map */
