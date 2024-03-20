@@ -1,6 +1,11 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 a {
   color: black;
   text-decoration: none;
+}
+
+li, p {
+  font-size: 14px;
 }
 
 header {
@@ -90,6 +95,105 @@ header .logo-head .header-menu .search-icon {
   margin-left: 20px;
   width: 20px;
   height: 20px;
+}
+header .close {
+  display: none;
+}
+header .open {
+  display: inherit;
+}
+header .accordion-area {
+  display: none;
+  padding-bottom: 30px;
+  background-color: #eaeaea;
+  border-top: 3px solid orangered;
+}
+header .accordion-area .container {
+  width: 60%;
+}
+header .accordion-area .accordion-area-title {
+  padding: 20px 0;
+  vertical-align: middle;
+}
+header .accordion-area .accordion-area-title::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 5px;
+  background-color: #e71784;
+  transform: translateY(-50%);
+}
+header .accordion-area .accordion-area-content {
+  justify-content: space-between;
+}
+header .accordion-area .accordion-links {
+  justify-content: space-between;
+  width: calc(50% - 10px);
+}
+header .accordion-area .accordion-links .links {
+  margin-bottom: 20px;
+}
+header .accordion-area .accordion-links .links .links-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+header .accordion-area .accordion-links li {
+  position: relative;
+  margin-bottom: 1px;
+  padding: 3px 0;
+  background-color: white;
+  font-size: 14px;
+}
+header .accordion-area .accordion-links li a {
+  display: block;
+  padding-left: 15px;
+  width: 100%;
+  height: 100%;
+}
+header .accordion-area .accordion-links li::before {
+  content: "\e409";
+  font-family: "Material Icons";
+  font-weight: 900;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  color: #e71784;
+}
+header .accordion-area .accordion-images {
+  width: calc(50% - 10px);
+  justify-content: space-between;
+}
+header .accordion-area .accordion-images .wrapper {
+  width: calc(50% - 10px);
+}
+header .accordion-area .accordion-images .wrapper .accordion-image-card {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 30px 15px;
+  height: 280px;
+  background-color: white;
+}
+header .accordion-area .accordion-images .wrapper .accordion-image-card .pop {
+  position: absolute;
+  top: 8px;
+  left: 25px;
+  padding: 5px;
+  color: white;
+}
+header .accordion-area .accordion-images .wrapper .accordion-image-card .pop-left {
+  background-color: #b19553;
+}
+header .accordion-area .accordion-images .wrapper .accordion-image-card .pop-right {
+  background-color: #e71784;
+}
+header .accordion-area .accordion-images .wrapper .accordion-image-card img {
+  width: 100%;
+  height: auto;
+}
+header .accordion-area .accordion-images .wrapper .accordion-image-card .button {
+  width: 80%;
 }
 
 footer {
@@ -287,24 +391,28 @@ li {
   color: #e71784;
 }
 .article .article-text .article-text .button {
-  position: relative;
   margin: 20px auto 30px;
-  padding: 10px 0;
   width: 30%;
+}
+
+.button {
+  position: relative;
+  padding: 10px 0;
+  background-color: white;
   border: 1px solid #e71784;
   border-radius: 50px;
   color: #e71784;
   text-align: center;
   transition: all 0.3s;
 }
-.article .article-text .article-text .button:hover {
+.button:hover {
   background-color: #e71784;
   color: white;
 }
-.article .article-text .article-text .button:hover .material-symbols-outlined {
+.button:hover .material-symbols-outlined {
   transform: translate(5px, -50%);
 }
-.article .article-text .article-text .button .material-symbols-outlined {
+.button .material-symbols-outlined {
   position: absolute;
   top: 50%;
   right: 10px;

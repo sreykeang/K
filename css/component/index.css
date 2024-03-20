@@ -84,24 +84,28 @@
   color: #e71784;
 }
 .article .article-text .article-text .button {
-  position: relative;
   margin: 20px auto 30px;
-  padding: 10px 0;
   width: 30%;
+}
+
+.button {
+  position: relative;
+  padding: 10px 0;
+  background-color: white;
   border: 1px solid #e71784;
   border-radius: 50px;
   color: #e71784;
   text-align: center;
   transition: all 0.3s;
 }
-.article .article-text .article-text .button:hover {
+.button:hover {
   background-color: #e71784;
   color: white;
 }
-.article .article-text .article-text .button:hover .material-symbols-outlined {
+.button:hover .material-symbols-outlined {
   transform: translate(5px, -50%);
 }
-.article .article-text .article-text .button .material-symbols-outlined {
+.button .material-symbols-outlined {
   position: absolute;
   top: 50%;
   right: 10px;
