@@ -15,7 +15,7 @@
   width: 50%;
   padding: 10px;
   margin: 10px;
-  font: 16px;
+  font-size: 16px;
   color: black;
 }
 .toppage-news .toppage-list .news-list .list {
@@ -27,6 +27,20 @@
 .toppage-news .toppage-list .img-list {
   width: 70px;
   height: 50px;
+}
+.toppage-news .toppage-list .text-list {
+  font-size: small;
+}
+.toppage-news .toppage-list .text-list .text-list-wrapper {
+  display: flex;
+}
+.toppage-news .toppage-list .text-list .text-list-wrapper .text {
+  display: flex;
+}
+.toppage-news .toppage-list .text-list .text-list-wrapper .text .news-list-category {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=index.css.map */
