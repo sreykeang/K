@@ -361,5 +361,16 @@ li {
   color: white;
   border-radius: 5px;
 }
+.toppage-news .toppage-list .toppage-text .text-link {
+  display: flex;
+}
+.toppage-news .toppage-list .toppage-text .text-link .link {
+  display: flex;
+}
+.toppage-news .toppage-list .toppage-text .text-link .link .link-category {
+  background-color: white;
+  color: #e71784;
+  border-radius: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */
