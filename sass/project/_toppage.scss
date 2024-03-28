@@ -47,6 +47,13 @@
       // display: flex;
       padding: 18px;
       font-size: small;
+      .link {
+        display: inline-block;
+        margin: 0 10px 2px 2px;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        color: #b19553;
+      }
       .top-link {
         display: block;
         text-align: center;
@@ -58,7 +65,10 @@
         margin-bottom: 10px;
       }
       .news-date-category {
-        display: flex;
+        display: inline-block;
+        width: 100%;
+        font-size: 1.38rem;
+        line-height: 2.0rem;
       }
     }
   }

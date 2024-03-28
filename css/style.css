@@ -362,6 +362,13 @@ li {
   padding: 18px;
   font-size: small;
 }
+.toppage-news .toppage-text .text-link .link {
+  display: inline-block;
+  margin: 0 10px 2px 2px;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #b19553;
+}
 .toppage-news .toppage-text .text-link .top-link {
   display: block;
   text-align: center;
@@ -373,7 +380,10 @@ li {
   margin-bottom: 10px;
 }
 .toppage-news .toppage-text .text-link .news-date-category {
-  display: flex;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.38rem;
+  line-height: 2rem;
 }
 .toppage-news .toppage-wrapper {
   display: flex;
