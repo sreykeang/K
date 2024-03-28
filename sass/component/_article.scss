@@ -102,3 +102,30 @@
     }
   }
 }
+
+.button {
+  position: relative;
+  margin: 20px auto 30px;
+  padding: 10px 0;
+  width: 30%;
+  border: 1px solid #e71784;
+  border-radius: 50px;
+  color: #e71784;
+  text-align: center;
+  transition: all 0.3s;
+  &:hover {
+    background-color: #e71784;
+    color: white;
+  }
+  &:hover .material-symbols-outlined {
+    transform: translate(5px, -50%);
+  }
+  .material-symbols-outlined {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    font-weight: bold;
+    transition: all 0.1s;
+  }
+}

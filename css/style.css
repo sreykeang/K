@@ -390,6 +390,7 @@ li {
 .article .article-text .article-text .article-links a:hover {
   color: #e71784;
 }
+
 .article .article-text .article-text .button {
   margin: 20px auto 30px;
   width: 30%;
@@ -419,6 +420,93 @@ li {
   transform: translate(0, -50%);
   font-weight: bold;
   transition: all 0.1s;
+}
+
+.toppage-news .news-title {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  color: #e71784;
+  font-weight: 700px;
+  font-size: 2.4rem;
+}
+.toppage-news .toppage-list {
+  margin: 0 auto;
+}
+.toppage-news .toppage-list .list-right {
+  text-align: right;
+}
+.toppage-news .toppage-list .news-list {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  color: black;
+}
+.toppage-news .toppage-list .news-list .list {
+  width: 20%;
+  text-align: center;
+  border-right: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+.toppage-news .toppage-list .img-list {
+  width: 80px;
+  height: 60px;
+}
+.toppage-news .toppage-list .text-list {
+  font-size: small;
+}
+.toppage-news .toppage-list .text-list .text-list-wrapper {
+  display: flex;
+}
+.toppage-news .toppage-list .text-list .text-list-wrapper .text {
+  display: flex;
+  padding: 10px;
+}
+.toppage-news .toppage-text {
+  width: 60%;
+}
+.toppage-news .toppage-text .text-link {
+  padding: 18px;
+  font-size: small;
+}
+.toppage-news .toppage-text .text-link .link {
+  display: inline-block;
+  margin: 0 10px 2px 2px;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #b19553;
+}
+.toppage-news .toppage-text .text-link .top-link {
+  display: block;
+  text-align: center;
+  border-bottom: solid 4px #e84141;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.toppage-news .toppage-text .text-link .news-date-category {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.38rem;
+  line-height: 2rem;
+}
+.toppage-news .toppage-wrapper {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+.toppage-news .news-list-category {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+.toppage-news .toppage-news-button {
+  margin: 20px 0 30px auto;
+  width: fit-content;
+  padding: 10px 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
