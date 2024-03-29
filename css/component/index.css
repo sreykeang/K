@@ -84,11 +84,15 @@
   color: #e71784;
 }
 
+.article .article-text .article-text .button {
+  margin: 20px auto 30px;
+  width: 30%;
+}
+
 .button {
   position: relative;
-  margin: 20px auto 30px;
   padding: 10px 0;
-  width: 30%;
+  background-color: white;
   border: 1px solid #e71784;
   border-radius: 50px;
   color: #e71784;

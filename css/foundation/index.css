@@ -3,4 +3,8 @@ a {
   text-decoration: none;
 }
 
+li, p {
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=index.css.map */
