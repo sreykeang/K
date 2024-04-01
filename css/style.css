@@ -390,10 +390,36 @@ li {
 .article .article-text .article-text .article-links a:hover {
   color: #e71784;
 }
-
 .article .article-text .article-text .button {
   margin: 20px auto 30px;
   width: 30%;
+}
+
+.button {
+  position: relative;
+  margin: 20px auto 30px;
+  padding: 10px 0;
+  width: 30%;
+  border: 1px solid #e71784;
+  border-radius: 50px;
+  color: #e71784;
+  text-align: center;
+  transition: all 0.3s;
+}
+.button:hover {
+  background-color: #e71784;
+  color: white;
+}
+.button:hover .material-symbols-outlined {
+  transform: translate(5px, -50%);
+}
+.button .material-symbols-outlined {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  font-weight: bold;
+  transition: all 0.1s;
 }
 
 .button {
@@ -509,12 +535,25 @@ li {
   padding: 10px 40px;
 }
 
-.middle-thailand {
+.toppage-about {
   background-color: #95c9ed;
   background-image: none;
   background-size: cover;
   width: 100%;
   text-align: center;
+}
+.toppage-about .toppage-title {
+  color: red;
+}
+.toppage-about .toppage-title-list {
+  width: 20%;
+}
+
+.toppage-menu {
+  text-align: center;
+}
+.toppage-menu .toppage-menu-list {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

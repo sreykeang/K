@@ -85,12 +85,25 @@
   padding: 10px 40px;
 }
 
-.middle-thailand {
+.toppage-about {
   background-color: #95c9ed;
   background-image: none;
   background-size: cover;
   width: 100%;
   text-align: center;
+}
+.toppage-about .toppage-title {
+  color: red;
+}
+.toppage-about .toppage-title-list {
+  width: 20%;
+}
+
+.toppage-menu {
+  text-align: center;
+}
+.toppage-menu .toppage-menu-list {
+  color: red;
 }
 
 /*# sourceMappingURL=index.css.map */
