@@ -536,17 +536,39 @@ li {
 }
 
 .toppage-about {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
   background-color: #95c9ed;
   background-image: none;
   background-size: cover;
   width: 100%;
-  text-align: center;
 }
 .toppage-about .toppage-title {
   color: red;
 }
+.toppage-about .title-img {
+  vertical-align: bottom;
+}
 .toppage-about .toppage-title-list {
   width: 20%;
+  padding: 50px 50px;
+}
+.toppage-about .toppage-title-list .list-img {
+  display: flex;
+  width: 400px;
+  height: 300px;
 }
 
 .toppage-menu {
@@ -554,6 +576,11 @@ li {
 }
 .toppage-menu .toppage-menu-list {
   color: red;
+}
+.toppage-menu .toppage-menu-list .menu-list {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
