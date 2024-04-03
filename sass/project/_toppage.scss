@@ -89,6 +89,9 @@
   }
 }
 .toppage-about {
+  .toppage-title {
+    color: red;
+  }
   justify-content: space-between;
   align-items: flex-start;
   display: flex;
@@ -107,14 +110,9 @@
   background-image: none;
   background-size: cover;
   width: 100%;
-  .toppage-title {
-    color: red;
-  }
   .title-img {
-    vertical-align: bottom;
-   
+    vertical-align: bottom; 
   }
-  
   .toppage-title-list {
     width: calc(100%/5 );
     padding:50px 50px;
@@ -126,13 +124,17 @@
   }
 }
 .toppage-menu {
-  text-align: center;
-  .toppage-menu-list {
+  align-items:flex-start;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  .toppage-title-menu {
     color: red;
+  }
+  .toppage-menu-group {
     .menu-list {
-      justify-content: space-between;
       align-items: flex-start;
-      display: flex;
     }
   }
 }

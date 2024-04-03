@@ -122,15 +122,17 @@
 }
 
 .toppage-menu {
-  text-align: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
 }
-.toppage-menu .toppage-menu-list {
+.toppage-menu .toppage-title-menu {
   color: red;
 }
-.toppage-menu .toppage-menu-list .menu-list {
-  justify-content: space-between;
+.toppage-menu .toppage-menu-group .menu-list {
   align-items: flex-start;
-  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */
