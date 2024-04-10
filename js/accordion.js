@@ -38,12 +38,12 @@ $('.header-button').on('click', function() {
 			const accordion_name = ".accordion-" + header_navi[i].class_name;
 			if($(accordion_name).hasClass("open")){
 					$(accordion_name).removeClass("open");
-					$(".accordion-area").slideUp("fast");
+					$(".accordion-area").slideUp("300");
 			} else {
 				$(".accordion-area").css("display", "none");
 				$(".accordion-area").removeClass("open");
 				$(accordion_name).addClass("open");
-				$(accordion_name).slideDown("fast");
+				$(accordion_name).slideDown("300");
 			}
 		}
 	}
