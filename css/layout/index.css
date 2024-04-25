@@ -1,33 +1,10 @@
 header {
-  border-bottom: 3px solid orangered;
+  border-bottom: solid 3px;
+  border-image: linear-gradient(to right, #CC0001, #000098) 1;
 }
 header .container {
   margin: 0 auto;
   width: 80%;
-}
-header .link-head {
-  margin: 8px 0;
-  font-size: 12px;
-  text-align: right;
-}
-header .link-head .text-logo {
-  color: #666;
-}
-header .link-head .text {
-  color: #005bac;
-}
-header .link-head a {
-  margin-right: 15px;
-  text-decoration: none;
-}
-header .link-head .img-logo {
-  width: 15px;
-  height: 15px;
-}
-header .link-head .material-symbols-outlined {
-  vertical-align: top;
-  font-size: 16px;
-  font-weight: 700;
 }
 header .logo-head {
   display: flex;
@@ -37,40 +14,38 @@ header .logo-head {
   height: 78px;
 }
 header .logo-head .img-logo-head {
-  margin-top: -10px;
-  width: 120px;
+  width: 95.29px;
   height: 60px;
 }
 header .logo-head .header-menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: calc(90% - 120px);
+  width: calc(95% - 95.29px);
+}
+header .logo-head .header-menu .header-button {
+  transition: all 0.3s;
+}
+header .logo-head .header-menu .header-button:hover .title {
+  color: #CC0001;
+}
+header .logo-head .header-menu .header-button:hover {
+  transform: translateY(-5px);
 }
 header .logo-head .header-menu .logo-link-first {
   border-left-style: dotted;
   border-left-width: 1px;
   border-color: gray;
 }
-header .logo-head .header-menu a {
-  text-decoration: none;
-}
-header .logo-head .header-menu a:hover {
-  transition: all 0.3s;
-  transform: translate(0, -5px);
-}
 header .logo-head .header-menu .logo-link {
-  padding: 10px 0;
-  width: 100%;
+  width: 14.2857142857%;
   text-align: center;
   border-right-style: dotted;
   border-right-width: 1px;
   border-color: gray;
 }
-header .logo-head .header-menu .img-logo {
-  width: 60px;
-  height: 30px;
+header .logo-head .header-menu .logo-link .img-logo {
+  height: 40px;
 }
 header .logo-head .header-menu .title {
   color: black;
@@ -78,19 +53,10 @@ header .logo-head .header-menu .title {
   font-weight: bold;
   transform: translate(0, 5px);
 }
-header .logo-head .header-menu .title:hover {
-  transition: all 0.5s;
-}
 header .logo-head .header-menu .search-icon {
   margin-left: 20px;
   width: 20px;
   height: 20px;
-}
-header .close {
-  display: none;
-}
-header .open {
-  display: inherit;
 }
 header .accordion-area {
   display: none;
@@ -185,8 +151,15 @@ header .accordion-area .accordion-images .wrapper .accordion-image-card img {
 header .accordion-area .accordion-images .wrapper .accordion-image-card .button {
   width: 80%;
 }
+header .close {
+  display: none;
+}
+header .open {
+  display: inherit;
+}
 
 footer {
+  padding-bottom: 50px;
   background-color: #444444;
   color: white;
   text-decoration: none;
@@ -202,20 +175,47 @@ footer .footer-banner img {
 }
 footer .container {
   margin: 0 auto;
-  width: 80%;
+  padding: 50px 0 30px;
+  width: 90%;
 }
-footer .container li {
-  list-style: none;
+footer .container .list-title {
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #666;
+  font-size: 15px;
+  font-weight: bold;
   vertical-align: middle;
 }
-footer .container li::before {
+footer .container .list-title::before {
   content: "";
-  margin-right: 4px;
+  margin-right: 9px;
   width: 5px;
   height: 1px;
   display: inline-block;
   background-color: white;
   vertical-align: center;
+}
+footer .container li {
+  margin-bottom: 5px;
+  padding-left: 5px;
+  list-style: none;
+  vertical-align: middle;
+}
+footer .container li:hover {
+  opacity: 0.5;
+}
+footer .container li::before {
+  content: "";
+  margin-right: 9px;
+  width: 5px;
+  height: 1px;
+  display: inline-block;
+  background-color: white;
+  vertical-align: center;
+}
+footer .container li a {
+  color: white;
 }
 footer .container li .footer-company-text {
   text-align: center;
@@ -225,28 +225,42 @@ footer .container li .footer-company-text .text {
   font-weight: bold;
   font-size: large;
 }
-footer .text {
-  padding: 20px;
-  margin: 20px;
+footer .container .list-about-cambodia {
+  width: calc(50% - 10px);
 }
-footer .text .size {
-  font-size: 15px;
-  font-weight: bold;
-  border-bottom: solid 1px #666;
-  margin-bottom: 7.5px;
-  padding-bottom: 7.5px;
+footer .container .list-area {
+  width: calc(25% - 10px);
 }
-footer .text-list {
-  padding: 20px;
-  margin: 20px;
+footer .container .list-restaurant {
+  width: calc(25% - 10px);
+}
+footer .container .list-spot {
+  width: 12.5%;
+}
+footer .container .list-hotel {
+  width: 25%;
+}
+footer .container .list-activity {
+  width: 25%;
+}
+footer .container .list-theme {
+  width: 25%;
+}
+footer .container .multiple_list {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .multiple_list ul {
+  margin-right: 5px;
 }
 footer .footer-upper-content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 footer .footer-middle-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 footer .footer-middle-content .list-title {
@@ -270,6 +284,9 @@ footer .footer-bottom-content .text-link {
   font-size: small;
   margin-right: 25px;
 }
+footer .footer-bottom-content .text-link:hover {
+  opacity: 0.5;
+}
 footer .footer-bottom-content .text-link a {
   color: white;
 }
@@ -285,14 +302,6 @@ footer .footer-bottom-content .bar::before {
 footer .footer-bottom-content .copy-right {
   text-align: center;
   padding-bottom: 50px;
-}
-
-.flex {
-  display: flex;
-}
-
-li {
-  list-style: none;
 }
 
 /*# sourceMappingURL=index.css.map */

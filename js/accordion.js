@@ -1,6 +1,6 @@
 const header_navi = [
 	{
-		name: "タイを知る",
+		name: "カンボジアとは",
 		class_name: "about"
 	},
 	{
@@ -8,11 +8,11 @@ const header_navi = [
 		class_name: "area_info"
 	},
 	{
-		name: "観光スポット",
+		name: "観光地",
 		class_name: "travel_spot"
 	},
 	{
-		name: "グルメ",
+		name: "食べ物",
 		class_name: "food"
 	},
 	{
@@ -20,7 +20,7 @@ const header_navi = [
 		class_name: "hotel"
 	},
 	{
-		name: "楽しむ",
+		name: "アクティビティ",
 		class_name: "enjoy"
 	},
 	{

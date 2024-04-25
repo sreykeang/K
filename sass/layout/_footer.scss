@@ -1,4 +1,5 @@
 footer {
+  padding-bottom: 50px;
   background-color: #444444;
   color: white;
   text-decoration: none;
@@ -17,18 +18,45 @@ footer {
 
   .container {
     margin: 0 auto;
-    width: 80%;
-    li {
-      list-style: none;
+    padding: 50px 0 30px;
+    width: 90%;
+    .list-title {
+      margin-bottom: 5px;
+      padding-left: 5px;
+      padding-bottom: 5px;
+      border-bottom: solid 1px #666;
+      font-size: 15px;
+      font-weight: bold;
       vertical-align: middle;
       &::before {
         content: "";
-        margin-right: 4px;
+        margin-right: 9px;
         width: 5px;
         height: 1px;
         display: inline-block;
         background-color: white;
         vertical-align: center;
+      } 
+    }
+    li {
+      margin-bottom: 5px;
+      padding-left: 5px;
+      list-style: none;
+      vertical-align: middle;
+      &:hover {
+        opacity: 0.5;
+      }
+      &::before {
+        content: "";
+        margin-right: 9px;
+        width: 5px;
+        height: 1px;
+        display: inline-block;
+        background-color: white;
+        vertical-align: center;
+      }
+      a {
+        color: white;
       }
       .footer-company-text {
         text-align: center;
@@ -39,32 +67,47 @@ footer {
         }
       }
     }
-  }
-
-  .text {
-    padding: 20px;
-    margin: 20px;
-    .size {
-      font-size: 15px;
-      font-weight: bold;
-      border-bottom: solid 1px #666;
-      margin-bottom: 7.5px;
-      padding-bottom: 7.5px;
+    .list-about-cambodia {
+      width: calc(100% * 1/2 - 10px);
     }
-  }
-  .text-list {
-    padding: 20px;
-    margin: 20px;
+    .list-area {
+      width: calc(100% * 1/4 - 10px);
+    }
+    .list-restaurant {
+      width: calc(100% * 1/4 - 10px);
+    }
+
+    .list-spot {
+      width: calc(100% * (1/8));
+    }
+    .list-hotel {
+      width: calc(100% * (2/8));
+    }
+    .list-activity {
+      width: calc(100% * (2/8));
+    }
+    .list-theme {
+      width: calc(100% * (2/8));
+    }
+
+    .multiple_list{
+      display: flex;
+      justify-content: space-between;
+      ul {
+        margin-right: 5px;
+      }
+    }
   }
 
   .footer-upper-content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
 
   .footer-middle-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 50px;
     .list-title {
       margin-left: -25px;
@@ -89,6 +132,9 @@ footer {
       list-style: none;
       font-size: small;
       margin-right: 25px;
+      &:hover {
+        opacity: 0.5;
+      }
       a {
         color: white;
       }
@@ -109,12 +155,4 @@ footer {
       padding-bottom: 50px;
     }
   }
-}
-
-.flex {
-  display: flex;
-}
-
-li {
-  list-style: none;
 }

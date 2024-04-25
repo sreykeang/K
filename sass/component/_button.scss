@@ -1,25 +1,27 @@
-.button {
+@mixin button_template($color) {
   position: relative;
-  padding: 10px 0;
-  background-color: white;
-  border: 1px solid #e71784;
+  padding: 5px 30px;
+  width: fit-content;
+  background-color: $color;
   border-radius: 50px;
-  color: #e71784;
+  color: white;
   text-align: center;
   transition: all 0.3s;
   &:hover {
-    background-color: #e71784;
-    color: white;
+    border: 1px solid $color;
+    background-color: white;
+    color: $color;
   }
-  &:hover .material-symbols-outlined {
-    transform: translate(5px, -50%);
-  }
-  .material-symbols-outlined {
+  &:before {
+    font-family: 'Material Icons';
+    content: "\e037";
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translate(0, -50%);
-    font-weight: bold;
-    transition: all 0.1s;
+  }
+  &:hover::before{
+    transform: translate(5px, -50%);
+    transition: all 0.3s;
   }
 }
