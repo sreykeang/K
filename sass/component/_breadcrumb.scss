@@ -1,0 +1,16 @@
+.c_breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  margin-left: auto;
+  li {
+    &:not(:first-child){
+      &::before {
+        content: ">";
+        margin: 0 5px;
+        color: #898989;
+        vertical-align: top;
+      }
+    }
+  }
+}

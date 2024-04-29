@@ -1,0 +1,26 @@
+.c_sub-page-news {
+  margin: 10px 0;
+  padding: 0 5px;
+  .sub-page-news-link {
+    padding-bottom: 10px;
+    color: black;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #CC0001, #000098) 1;
+    text-decoration: none;
+    .sub-page-news-title {
+      display: block;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      &:hover {
+        color: #CC0001;
+      }
+    }
+  }
+  .news-date {
+    color: #b19553;
+  }
+}

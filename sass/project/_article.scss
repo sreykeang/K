@@ -1,0 +1,186 @@
+@use "./../component/button" as *;
+
+.article {
+  //画像背景タイトル
+  .title-banner {
+    position: relative;
+    height: 360px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .title-banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bolder;
+      font-size: 36px;
+    }
+  }
+  
+  .article-content {
+    margin: 0 auto;
+    width: 70%;
+    // 記事タイトル
+    .article-title {
+      padding-bottom: 10px;
+      border-bottom: 1px solid gray;
+      .title {
+        padding-top: 10px;
+      }
+      .title-eng { 
+        color: gray;
+      }
+    }
+
+    // 記事本文
+    .article-text {
+      margin: 10px 0 0 auto;
+      padding-top: 10px;
+      padding-left: 2%;
+      .section {
+        margin-bottom: 30px;
+        .container {
+          display: flex;
+          justify-content: space-around;
+          .image {
+            margin-bottom: 0;
+            width: 45%;
+            height: inherit;
+            background-color: #ededed;
+          }
+          .text-container {
+            width: calc(45%);
+          }
+        }
+      }
+      // 大見出し
+      .article-heading {
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        font-size: 25px;
+        font-weight: bolder;
+        border-bottom: 5px solid;
+        border-image: linear-gradient(to right, #CC0001, #000098) 1;
+        &:before {
+          font-family: 'Material Icons';
+          content: "\e838";
+          margin-right: 3px;
+          color: #CC0001;
+          font-size: 20px;
+        }
+      }
+      // 中見出し
+      .article-subheading {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        min-width: 20px;
+        width: fit-content;
+        font-size: 20px;
+        background-image: linear-gradient(135deg, #cc0000 0, #000098 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 5px;
+        background-position: left bottom;
+        .article-subheading-eng { 
+          font-size: 14px;
+          font-weight: normal;
+          color: gray;
+        }
+      }
+      .image {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 300px;
+        background-color: #e2e2e2;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      // 関連ページリンク一覧
+      .article-link-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        list-style: none;
+        border: 1px solid rgb(201, 201, 201);
+        .link-item {
+          display: flex;
+          align-items: center;
+          transition: all 0.3s;
+          &:hover {
+            color: #000098;
+            transform: translateY(-5px);
+          }
+          &:before {
+            font-family: 'Material Icons';
+            content: "\e037";
+            margin-right: 3px;
+          }
+          &:hover::before {
+            color: #000098;
+          }
+        }
+      }
+      .timeline {
+        .timeline-list {
+          display: flex;
+          padding-bottom: 15px;
+          .timeline-date {
+            position: relative;
+            margin: 0 10px -15px 0;
+            padding-right: 10px;
+            padding-bottom: 15px;
+            width: 20%;
+            min-width: 150px;
+            border-right: 3px #e5e5d1 solid;
+            text-align: right;
+            &::after {
+              content: '';
+              width: 10px;
+              height: 10px;
+              background: #6fc173;
+              position: absolute;
+              top: 0;
+              right: -1.5px;
+              border-radius: 100%;
+              transform: translate(50%, 50%);
+            }
+          }
+          .timeline-content{
+            font-weight: bold;
+          }
+        }
+      }
+
+      
+
+      .button {
+        @include button_template(#CC0001);
+        margin: 30px auto;
+        padding: 10px;
+        width: 30%;
+      }
+      .quote {
+        text-align: right;
+      }
+      .article-overview {
+        margin-bottom: 50px;
+      }
+      .text {
+        margin-bottom: 10px;
+      }
+      .caution {
+        color: #cc0000;
+      }
+    }
+  }
+}

@@ -5,3 +5,7 @@ $('.toppage-slider').slick({
   fade: true,
   arrows: false,
 });
+$('.c_sub-page-news').slick({
+  autoplay: true,
+  autoplaySpeed: 3000,
+});

@@ -24,4 +24,11 @@
     transform: translate(5px, -50%);
     transition: all 0.3s;
   }
+  a {
+    color: white;
+    font-size: 14px;
+  }
+  &:hover a {
+    color: $color;
+  }
 }

@@ -1,0 +1,128 @@
+@use "./../component/button" as *;
+
+.area {
+  .area-image {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .main-image {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      width: calc(65% - 10px);
+      height: 300px;
+      background-color: #e2e2e2;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .image-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 35%;
+      .image-right-list {
+        width: calc(50% - 5px);
+        height: 300px;
+        img {
+          width: 100%;
+          height: calc(100% / 3 - 3px);
+          object-fit: cover;
+        }
+      }
+      .image-left-list {
+        width: calc(50% - 5px);
+        height: 300px;
+        img {
+          width: 100%;
+          height: calc(100% / 3 - 3px);
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .area-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .area-map {
+      width: calc(50% - 10px);
+      height: 350px;
+      background-color: #e2e2e2;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .area-overview-text {
+      width: calc(50% - 10px);
+    }
+  }
+  .area-link {
+    margin-bottom: 30px;
+    padding: 20px 20px 0;
+    border: 1px solid rgb(201, 201, 201);
+    .area-link-text {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .area-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+      .area-item {
+        position: relative;
+        margin-bottom: 15px;
+        width: calc(25% - 15px);;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:hover .area-name {
+          transform: translate(5px, -5px);
+          transition: all 0.3s;
+        }
+        
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .area-name {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          color: white;
+          font-weight: bold;
+        }
+        .box-shadow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(rgba(0,0,0,0) 75%,rgba(0,0,0,1));
+        }
+      }
+    }
+  }
+  .area-button-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    .area-button {
+      @include button_template(#CC0001);
+      margin-bottom: 15px;
+      width: calc(25% - 15px);
+      min-width: fit-content;
+      border-radius: 5px;
+    }
+  }
+}

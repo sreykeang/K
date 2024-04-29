@@ -416,7 +416,6 @@ header .open {
 }
 
 footer {
-  padding-bottom: 50px;
   background-color: #444444;
   color: white;
   text-decoration: none;
@@ -474,62 +473,21 @@ footer .container li::before {
 footer .container li a {
   color: white;
 }
-footer .container li .footer-company-text {
-  text-align: center;
+footer .container .footer-upper-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-footer .container li .footer-company-text .text {
-  color: white;
-  font-weight: bold;
-  font-size: large;
-}
-footer .container .list-about-cambodia {
-  width: calc(50% - 10px);
-}
-footer .container .list-area {
-  width: calc(25% - 10px);
-}
-footer .container .list-restaurant {
-  width: calc(25% - 10px);
-}
-footer .container .list-spot {
-  width: 12.5%;
-}
-footer .container .list-hotel {
-  width: 25%;
-}
-footer .container .list-activity {
-  width: 25%;
-}
-footer .container .list-theme {
-  width: 25%;
+footer .container .footer-upper-content .list {
+  margin-bottom: 30px;
+  width: fit-content;
 }
 footer .container .multiple_list {
   display: flex;
   justify-content: space-between;
 }
 footer .container .multiple_list ul {
-  margin-right: 5px;
-}
-footer .footer-upper-content {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-footer .footer-middle-content {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-footer .footer-middle-content .list-title {
-  margin-left: -25px;
-  padding-left: 25px;
-  font-weight: bold;
-  border-bottom: solid 1px #666;
-  margin-bottom: 7.5px;
-  padding-bottom: 7.5px;
-}
-footer .footer-middle-content .list-left-content {
-  margin-right: 50px;
+  margin-right: 10px;
 }
 footer .footer-bottom-content .footer-link {
   display: flex;
@@ -561,94 +519,44 @@ footer .footer-bottom-content .copy-right {
   padding-bottom: 50px;
 }
 
-.article .title-banner {
-  position: relative;
-  height: 360px;
+.c_breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  margin-left: auto;
 }
-.article .title-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.c_breadcrumb li:not(:first-child)::before {
+  content: ">";
+  margin: 0 5px;
+  color: #898989;
+  vertical-align: top;
 }
-.article .title-banner .title-banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-weight: bolder;
-  font-size: 36px;
-}
-.article .article-text {
-  margin: 0 auto;
-  width: 70%;
-}
-.article .article-text .news {
+
+.c_sub-page-news {
   margin: 10px 0;
+  padding: 0 5px;
 }
-.article .article-text .news a {
-  margin: 10px 0;
+.c_sub-page-news .sub-page-news-link {
+  padding-bottom: 10px;
   color: black;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to right, #CC0001, #000098) 1;
   text-decoration: none;
 }
-.article .article-text .news a:hover {
-  color: #e71784;
+.c_sub-page-news .sub-page-news-link .sub-page-news-title {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
 }
-.article .article-text .news .news-date {
+.c_sub-page-news .sub-page-news-link .sub-page-news-title:hover {
+  color: #CC0001;
+}
+.c_sub-page-news .news-date {
   color: #b19553;
-}
-.article .article-text .article-title {
-  padding-bottom: 10px;
-  border-bottom: 1px solid gray;
-}
-.article .article-text .article-title h1 {
-  padding-top: 10px;
-  border-top: 5px solid;
-  border-image: linear-gradient(to right, #e71784, #fdc300) 1;
-}
-.article .article-text .article-title p {
-  color: gray;
-}
-.article .article-text .article-text {
-  margin-top: 10px;
-  margin-left: auto;
-  padding-top: 20px;
-  width: calc(100% - 60px);
-}
-.article .article-text .article-text h2 {
-  margin: 50px 0 20px 0;
-  padding-bottom: 10px;
-  font-size: 30px;
-  font-weight: bolder;
-  border-bottom: 5px solid;
-  border-image: linear-gradient(to right, #e71784, #fdc300) 1;
-}
-.article .article-text .article-text .image {
-  margin: 0 auto 20px;
-  width: fit-content;
-}
-.article .article-text .article-text .image img {
-  margin: 0 auto;
-  object-fit: cover;
-}
-.article .article-text .article-text .article-links {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  padding: 20px;
-  list-style: none;
-  border: 1px solid rgb(201, 201, 201);
-}
-.article .article-text .article-text .article-links .material-symbols-outlined {
-  color: #e71784;
-  vertical-align: bottom;
-}
-.article .article-text .article-text .article-links a:hover {
-  color: #e71784;
-}
-.article .article-text .article-text .button {
-  margin: 20px auto 30px;
-  width: 30%;
 }
 
 .toppage .toppage-slider .slider-img {
@@ -753,6 +661,13 @@ footer .footer-bottom-content .copy-right {
   transform: translate(5px, -50%);
   transition: all 0.3s;
 }
+.toppage .toppage-news .news-wrapper .news-embassy .button a {
+  color: white;
+  font-size: 14px;
+}
+.toppage .toppage-news .news-wrapper .news-embassy .button:hover a {
+  color: #CC0001;
+}
 .toppage .toppage-news .news {
   width: calc(65% - 30px);
 }
@@ -853,6 +768,13 @@ footer .footer-bottom-content .copy-right {
 .toppage .toppage-news .news .button:hover::before {
   transform: translate(5px, -50%);
   transition: all 0.3s;
+}
+.toppage .toppage-news .news .button a {
+  color: white;
+  font-size: 14px;
+}
+.toppage .toppage-news .news .button:hover a {
+  color: #000098;
 }
 .toppage .title-wrapper {
   margin-bottom: 30px;
@@ -1010,6 +932,13 @@ footer .footer-bottom-content .copy-right {
   transform: translate(5px, -50%);
   transition: all 0.3s;
 }
+.toppage .toppage-keyword .button a {
+  color: white;
+  font-size: 14px;
+}
+.toppage .toppage-keyword .button:hover a {
+  color: #CC0001;
+}
 .toppage .toppage-keyword .keyword-title-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1118,6 +1047,7 @@ footer .footer-bottom-content .copy-right {
 .toppage .toppage-map .map-content .left-content img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 .toppage .toppage-map .text-supplement {
   text-align: right;
@@ -1158,6 +1088,361 @@ footer .footer-bottom-content .copy-right {
   padding: 10px;
   width: 100%;
   height: 100%;
+}
+
+.article .title-banner {
+  position: relative;
+  height: 360px;
+}
+.article .title-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.article .title-banner .title-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bolder;
+  font-size: 36px;
+}
+.article .article-content {
+  margin: 0 auto;
+  width: 70%;
+}
+.article .article-content .article-title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.article .article-content .article-title .title {
+  padding-top: 10px;
+}
+.article .article-content .article-title .title-eng {
+  color: gray;
+}
+.article .article-content .article-text {
+  margin: 10px 0 0 auto;
+  padding-top: 10px;
+  padding-left: 2%;
+}
+.article .article-content .article-text .section {
+  margin-bottom: 30px;
+}
+.article .article-content .article-text .section .container {
+  display: flex;
+  justify-content: space-around;
+}
+.article .article-content .article-text .section .container .image {
+  margin-bottom: 0;
+  width: 45%;
+  height: inherit;
+  background-color: #ededed;
+}
+.article .article-content .article-text .section .container .text-container {
+  width: 45%;
+}
+.article .article-content .article-text .article-heading {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-size: 25px;
+  font-weight: bolder;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to right, #CC0001, #000098) 1;
+}
+.article .article-content .article-text .article-heading:before {
+  font-family: "Material Icons";
+  content: "\e838";
+  margin-right: 3px;
+  color: #CC0001;
+  font-size: 20px;
+}
+.article .article-content .article-text .article-subheading {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  min-width: 20px;
+  width: fit-content;
+  font-size: 20px;
+  background-image: linear-gradient(135deg, #cc0000 0, #000098 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 5px;
+  background-position: left bottom;
+}
+.article .article-content .article-text .article-subheading .article-subheading-eng {
+  font-size: 14px;
+  font-weight: normal;
+  color: gray;
+}
+.article .article-content .article-text .image {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 300px;
+  background-color: #e2e2e2;
+}
+.article .article-content .article-text .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.article .article-content .article-text .article-link-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  list-style: none;
+  border: 1px solid rgb(201, 201, 201);
+}
+.article .article-content .article-text .article-link-list .link-item {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.article .article-content .article-text .article-link-list .link-item:hover {
+  color: #000098;
+  transform: translateY(-5px);
+}
+.article .article-content .article-text .article-link-list .link-item:before {
+  font-family: "Material Icons";
+  content: "\e037";
+  margin-right: 3px;
+}
+.article .article-content .article-text .article-link-list .link-item:hover::before {
+  color: #000098;
+}
+.article .article-content .article-text .timeline .timeline-list {
+  display: flex;
+  padding-bottom: 15px;
+}
+.article .article-content .article-text .timeline .timeline-list .timeline-date {
+  position: relative;
+  margin: 0 10px -15px 0;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  width: 20%;
+  min-width: 150px;
+  border-right: 3px #e5e5d1 solid;
+  text-align: right;
+}
+.article .article-content .article-text .timeline .timeline-list .timeline-date::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #6fc173;
+  position: absolute;
+  top: 0;
+  right: -1.5px;
+  border-radius: 100%;
+  transform: translate(50%, 50%);
+}
+.article .article-content .article-text .timeline .timeline-list .timeline-content {
+  font-weight: bold;
+}
+.article .article-content .article-text .button {
+  position: relative;
+  padding: 5px 30px;
+  width: fit-content;
+  background-color: #CC0001;
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 30px auto;
+  padding: 10px;
+  width: 30%;
+}
+.article .article-content .article-text .button:hover {
+  border: 1px solid #CC0001;
+  background-color: white;
+  color: #CC0001;
+}
+.article .article-content .article-text .button:before {
+  font-family: "Material Icons";
+  content: "\e037";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+.article .article-content .article-text .button:hover::before {
+  transform: translate(5px, -50%);
+  transition: all 0.3s;
+}
+.article .article-content .article-text .button a {
+  color: white;
+  font-size: 14px;
+}
+.article .article-content .article-text .button:hover a {
+  color: #CC0001;
+}
+.article .article-content .article-text .quote {
+  text-align: right;
+}
+.article .article-content .article-text .article-overview {
+  margin-bottom: 50px;
+}
+.article .article-content .article-text .text {
+  margin-bottom: 10px;
+}
+.article .article-content .article-text .caution {
+  color: #cc0000;
+}
+
+.area .area-image {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.area .area-image .main-image {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  width: calc(65% - 10px);
+  height: 300px;
+  background-color: #e2e2e2;
+}
+.area .area-image .main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.area .area-image .image-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+.area .area-image .image-list .image-right-list {
+  width: calc(50% - 5px);
+  height: 300px;
+}
+.area .area-image .image-list .image-right-list img {
+  width: 100%;
+  height: calc(33.3333333333% - 3px);
+  object-fit: cover;
+}
+.area .area-image .image-list .image-left-list {
+  width: calc(50% - 5px);
+  height: 300px;
+}
+.area .area-image .image-list .image-left-list img {
+  width: 100%;
+  height: calc(33.3333333333% - 3px);
+  object-fit: cover;
+}
+.area .area-overview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.area .area-overview .area-map {
+  width: calc(50% - 10px);
+  height: 350px;
+  background-color: #e2e2e2;
+}
+.area .area-overview .area-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.area .area-overview .area-overview-text {
+  width: calc(50% - 10px);
+}
+.area .area-link {
+  margin-bottom: 30px;
+  padding: 20px 20px 0;
+  border: 1px solid rgb(201, 201, 201);
+}
+.area .area-link .area-link-text {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.area .area-link .area-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.area .area-link .area-list .area-item {
+  position: relative;
+  margin-bottom: 15px;
+  width: calc(25% - 15px);
+}
+.area .area-link .area-list .area-item:hover {
+  opacity: 0.8;
+}
+.area .area-link .area-list .area-item:hover .area-name {
+  transform: translate(5px, -5px);
+  transition: all 0.3s;
+}
+.area .area-link .area-list .area-item img {
+  width: 100%;
+  height: 100%;
+}
+.area .area-link .area-list .area-item .area-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+}
+.area .area-link .area-list .area-item .box-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 75%, rgb(0, 0, 0));
+}
+.area .area-button-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.area .area-button-list .area-button {
+  position: relative;
+  padding: 5px 30px;
+  width: fit-content;
+  background-color: #CC0001;
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  transition: all 0.3s;
+  margin-bottom: 15px;
+  width: calc(25% - 15px);
+  min-width: fit-content;
+  border-radius: 5px;
+}
+.area .area-button-list .area-button:hover {
+  border: 1px solid #CC0001;
+  background-color: white;
+  color: #CC0001;
+}
+.area .area-button-list .area-button:before {
+  font-family: "Material Icons";
+  content: "\e037";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+.area .area-button-list .area-button:hover::before {
+  transform: translate(5px, -50%);
+  transition: all 0.3s;
+}
+.area .area-button-list .area-button a {
+  color: white;
+  font-size: 14px;
+}
+.area .area-button-list .area-button:hover a {
+  color: #CC0001;
 }
 
 .icon-filled {

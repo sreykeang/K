@@ -159,7 +159,6 @@ header .open {
 }
 
 footer {
-  padding-bottom: 50px;
   background-color: #444444;
   color: white;
   text-decoration: none;
@@ -217,62 +216,21 @@ footer .container li::before {
 footer .container li a {
   color: white;
 }
-footer .container li .footer-company-text {
-  text-align: center;
+footer .container .footer-upper-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-footer .container li .footer-company-text .text {
-  color: white;
-  font-weight: bold;
-  font-size: large;
-}
-footer .container .list-about-cambodia {
-  width: calc(50% - 10px);
-}
-footer .container .list-area {
-  width: calc(25% - 10px);
-}
-footer .container .list-restaurant {
-  width: calc(25% - 10px);
-}
-footer .container .list-spot {
-  width: 12.5%;
-}
-footer .container .list-hotel {
-  width: 25%;
-}
-footer .container .list-activity {
-  width: 25%;
-}
-footer .container .list-theme {
-  width: 25%;
+footer .container .footer-upper-content .list {
+  margin-bottom: 30px;
+  width: fit-content;
 }
 footer .container .multiple_list {
   display: flex;
   justify-content: space-between;
 }
 footer .container .multiple_list ul {
-  margin-right: 5px;
-}
-footer .footer-upper-content {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-footer .footer-middle-content {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-footer .footer-middle-content .list-title {
-  margin-left: -25px;
-  padding-left: 25px;
-  font-weight: bold;
-  border-bottom: solid 1px #666;
-  margin-bottom: 7.5px;
-  padding-bottom: 7.5px;
-}
-footer .footer-middle-content .list-left-content {
-  margin-right: 50px;
+  margin-right: 10px;
 }
 footer .footer-bottom-content .footer-link {
   display: flex;
